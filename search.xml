@@ -6,8 +6,13 @@
     <content><![CDATA[<h2 id="说一下为什么写博客"><a href="#说一下为什么写博客" class="headerlink" title="说一下为什么写博客"></a>说一下为什么写博客</h2>]]></content>
   </entry>
   <entry>
-    <title>友链</title>
-    <url>/link/index.html</url>
+    <title>关于</title>
+    <url>/about/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>分类</title>
+    <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -21,18 +26,13 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>关于</title>
-    <url>/about/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>AI绘画</title>
     <url>/painting/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>友链</title>
+    <url>/link/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
