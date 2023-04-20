@@ -6,6 +6,16 @@
     <content><![CDATA[<h2 id="说一下为什么写博客"><a href="#说一下为什么写博客" class="headerlink" title="说一下为什么写博客"></a>说一下为什么写博客</h2>]]></content>
   </entry>
   <entry>
+    <title>分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>友链</title>
+    <url>/link/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title></title>
     <url>/css/custom.css</url>
     <content><![CDATA[/* 页脚与头图透明 */
@@ -43,16 +53,6 @@
   }]]></content>
   </entry>
   <entry>
-    <title>关于</title>
-    <url>/about/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>电影</title>
     <url>/movies/index.html</url>
     <content><![CDATA[]]></content>
@@ -63,18 +63,18 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>标签页</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>友链</title>
-    <url>/link/index.html</url>
+    <title>关于</title>
+    <url>/about/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>AI绘画</title>
     <url>/painting/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>标签页</title>
+    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>
