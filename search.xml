@@ -32,28 +32,6 @@
     
     
     <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/runtime.js"/>
-      <url>/js/runtime.js</url>
-      
-        <content type="html"><![CDATA[// 获取当前时间var now = new Date();// 创建运行时间和旅行者1号距离的函数function createTime() {  now.setTime(now.getTime() + 1000);    // 计算运行时间  var startDate = new Date("2023/04/13 00:00:00");  var distance = Math.trunc(234e8 + (now - startDate) / 1000 * 17);    // 将距离转换为天文单位  var au = (distance / 1496e5).toFixed(6);    // 计算从指定日期开始的天数、小时数、分钟数和秒数  var targetDate = new Date("2023/04/13 00:00:00");  var diffInSeconds = (now - targetDate) / 1000;  var days = Math.floor(diffInSeconds / 86400);  var hours = Math.floor((diffInSeconds % 86400) / 3600);  var minutes = Math.floor((diffInSeconds % 3600) / 60);  var seconds = Math.round(diffInSeconds % 60);    // 格式化小时、分钟和秒  hours = hours < 10 ? "0" + hours : hours;  minutes = minutes < 10 ? "0" + minutes : minutes;  seconds = seconds < 10 ? "0" + seconds : seconds;    // 生成要显示的内容  var content = hours >= 9 && hours < 18    ? `<div style="font-size:13px;font-weight:bold">         本站居然运行了 ${days} 天 ${hours} 小时 ${minutes} 分 ${seconds} 秒         <i id="heartbeat" class='fas fa-heartbeat'></i> <br>         旅行者 1 号当前距离地球 ${distance} 千米，约为 ${au} 个天文单位 🚀       </div>`    : `<div style="font-size:13px;font-weight:bold">         本站居然运行了 ${days} 天 ${hours} 小时 ${minutes} 分 ${seconds} 秒         <i id="heartbeat" class='fas fa-heartbeat'></i> <br>         旅行者 1 号当前距离地球 ${distance} 千米，约为 ${au} 个天文单位 🚀       </div>`;    // 将内容显示在页面上  if (document.getElementById("workboard")) {    document.getElementById("workboard").innerHTML = content;  }}// 每秒更新一次内容setInterval(createTime, 1000);]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>分类</title>
       <link href="/categories/index.html"/>
       <url>/categories/index.html</url>
@@ -65,31 +43,9 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/custom.css"/>
-      <url>/css/custom.css</url>
-      
-        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {    background: transparent !important;  }  #page-header {    background: transparent !important;  }    /* 白天模式遮罩透明 */  #footer::before {    background: transparent !important;  }  #page-header::before {    background: transparent !important;  }    /* 夜间模式遮罩透明 */  [data-theme="dark"] #footer::before {    background: transparent !important;  }  [data-theme="dark"] #page-header::before {    background: transparent !important;  }@font-face {  /* 为载入的字体取名字(随意) */  font-family: 'YSHST';  /* 字体文件地址(相对或者绝对路径都可以) */  src: url(/font/优设好身体.woff2);    /* 定义加粗样式(加粗多少) */  font-weight: normal;    /* 定义字体样式(斜体/非斜体) */  font-style: normal;    /* 定义显示样式 */  font-display: block;  }  .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {    left: -66px !important;    /* 默认情况下缩进左侧66px，只留一点箭头部分 */  }    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {    left: 0 !important;    /* 鼠标悬停是左侧缩进归零，完全显示按钮 */  }]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>友链</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>音乐</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -120,11 +76,55 @@
     
     
     <entry>
+      <title></title>
+      <link href="/js/runtime.js"/>
+      <url>/js/runtime.js</url>
+      
+        <content type="html"><![CDATA[// 获取当前时间var now = new Date();// 创建运行时间和旅行者1号距离的函数function createTime() {  now.setTime(now.getTime() + 1000);    // 计算运行时间  var startDate = new Date("2023/04/13 00:00:00");  var distance = Math.trunc(234e8 + (now - startDate) / 1000 * 17);    // 将距离转换为天文单位  var au = (distance / 1496e5).toFixed(6);    // 计算从指定日期开始的天数、小时数、分钟数和秒数  var targetDate = new Date("2023/04/13 00:00:00");  var diffInSeconds = (now - targetDate) / 1000;  var days = Math.floor(diffInSeconds / 86400);  var hours = Math.floor((diffInSeconds % 86400) / 3600);  var minutes = Math.floor((diffInSeconds % 3600) / 60);  var seconds = Math.round(diffInSeconds % 60);    // 格式化小时、分钟和秒  hours = hours < 10 ? "0" + hours : hours;  minutes = minutes < 10 ? "0" + minutes : minutes;  seconds = seconds < 10 ? "0" + seconds : seconds;    // 生成要显示的内容  var content = hours >= 9 && hours < 18    ? `<div style="font-size:13px;font-weight:bold">         本站居然运行了 ${days} 天 ${hours} 小时 ${minutes} 分 ${seconds} 秒         <i id="heartbeat" class='fas fa-heartbeat'></i> <br>         旅行者 1 号当前距离地球 ${distance} 千米，约为 ${au} 个天文单位 🚀       </div>`    : `<div style="font-size:13px;font-weight:bold">         本站居然运行了 ${days} 天 ${hours} 小时 ${minutes} 分 ${seconds} 秒         <i id="heartbeat" class='fas fa-heartbeat'></i> <br>         旅行者 1 号当前距离地球 ${distance} 千米，约为 ${au} 个天文单位 🚀       </div>`;    // 将内容显示在页面上  if (document.getElementById("workboard")) {    document.getElementById("workboard").innerHTML = content;  }}// 每秒更新一次内容setInterval(createTime, 1000);]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>标签页</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>友链</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/custom.css"/>
+      <url>/css/custom.css</url>
+      
+        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {    background: transparent !important;  }  #page-header {    background: transparent !important;  }    /* 白天模式遮罩透明 */  #footer::before {    background: transparent !important;  }  #page-header::before {    background: transparent !important;  }    /* 夜间模式遮罩透明 */  [data-theme="dark"] #footer::before {    background: transparent !important;  }  [data-theme="dark"] #page-header::before {    background: transparent !important;  }@font-face {  /* 为载入的字体取名字(随意) */  font-family: 'YSHST';  /* 字体文件地址(相对或者绝对路径都可以) */  src: url(/font/优设好身体.woff2);    /* 定义加粗样式(加粗多少) */  font-weight: normal;    /* 定义字体样式(斜体/非斜体) */  font-style: normal;    /* 定义显示样式 */  font-display: block;  }  .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {    left: -66px !important;    /* 默认情况下缩进左侧66px，只留一点箭头部分 */  }    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {    left: 0 !important;    /* 鼠标悬停是左侧缩进归零，完全显示按钮 */  }]]></content>
       
     </entry>
     
