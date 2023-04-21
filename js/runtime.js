@@ -6,14 +6,14 @@ function createTime() {
   now.setTime(now.getTime() + 1000);
   
   // 计算运行时间
-  var startDate = new Date("2023/04/08 00:00:00");
+  var startDate = new Date("2023/04/13 00:00:00");
   var distance = Math.trunc(234e8 + (now - startDate) / 1000 * 17);
   
   // 将距离转换为天文单位
   var au = (distance / 1496e5).toFixed(6);
   
   // 计算从指定日期开始的天数、小时数、分钟数和秒数
-  var targetDate = new Date("2023/04/08 00:00:00");
+  var targetDate = new Date("2023/04/13 00:00:00");
   var diffInSeconds = (now - targetDate) / 1000;
   var days = Math.floor(diffInSeconds / 86400);
   var hours = Math.floor((diffInSeconds % 86400) / 3600);
