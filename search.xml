@@ -68,7 +68,11 @@
 
 
 
-
+/* 翻页按钮居中 */
+#pagination {
+  width: 100%;
+  margin: auto;
+}
 
 
 
@@ -137,8 +141,8 @@ setInterval(createTime, 1000);
 ]]></content>
   </entry>
   <entry>
-    <title>关于</title>
-    <url>/about/index.html</url>
+    <title>友链</title>
+    <url>/link/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -152,13 +156,8 @@ setInterval(createTime, 1000);
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>友链</title>
-    <url>/link/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>音乐</title>
-    <url>/music/index.html</url>
+    <title>关于</title>
+    <url>/about/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -169,6 +168,11 @@ setInterval(createTime, 1000);
   <entry>
     <title>标签页</title>
     <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>音乐</title>
+    <url>/music/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>
