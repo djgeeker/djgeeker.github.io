@@ -4795,7 +4795,7 @@ span.mathjax-overflow {
     background-repeat: no-repeat !important;
   }
   [data-theme="dark"] #web_bg {
-    background: url(https://im-bed1.pages.dev/fengmian/sjwanshang.png)#【可选】移动端夜间模式背景 !important;
+    background: url(https://im-bed1.pages.dev/fengmian/sjwanshang.png) !important;
     background-attachment: local !important;
     background-position: center !important;
     background-size: cover !important;
