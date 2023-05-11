@@ -166,373 +166,6 @@
       </tags>
   </entry>
   <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/css/custom.css</url>
-    <content><![CDATA[/* 页脚与头图透明 */
-#footer {
-    background: transparent !important;
-  }
-  #page-header {
-    background: transparent !important;
-  }
-  
-  /* 白天模式遮罩透明 */
-  #footer::before {
-    background: transparent !important;
-  }
-  #page-header::before {
-    background: transparent !important;
-  }
-  
-  /* 夜间模式遮罩透明 */
-  [data-theme="dark"] #footer::before {
-    background: transparent !important;
-  }
-  [data-theme="dark"] #page-header::before {
-    background: transparent !important;
-  }
-
-@font-face {
-  /* 为载入的字体取名字(随意) */
-  font-family: 'YSHST';	
-  /* 字体文件地址(相对或者绝对路径都可以) */
-  src: url(/font/优设好身体.woff2);
-    /* 定义加粗样式(加粗多少) */
-  font-weight: normal;
-    /* 定义字体样式(斜体/非斜体) */
-  font-style: normal;
-    /* 定义显示样式 */
-  font-display: block;
-  }
-
-
-
-/* 翻页按钮居中 */
-#pagination {
-  width: 100%;
-  margin: auto;
-}
-
-
-
-  .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-    left: -66px !important;
-    /* 默认情况下缩进左侧66px，只留一点箭头部分 */
-  }
-  
-  .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-    left: 0 !important;
-    /* 鼠标悬停是左侧缩进归零，完全显示按钮 */
-  }
-
-  /* 一级菜单居中 */
-#nav .menus_items {
-  position: absolute !important;
-  width: fit-content !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-}
-/* 子菜单横向展示 */
-#nav .menus_items .menus_item:hover .menus_item_child {
-  display: flex !important;
-}
-/* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */
-.menus_items .menus_item:nth-child(2) .menus_item_child {
-  left: -125px;
-}
-
-
-/* 侧边栏个人信息卡片动态渐变色 */
-#aside-content > .card-widget.card-info {
-  background: linear-gradient(
-    -45deg,
-    #c0c0c0, /* Silver */
-    #add8e6,/* Light Blue */
-    #FFFFFF,
-    #B0C4DE,
-    #FFFFFF,
-    #D3D3D3
-  );
-  box-shadow: 0 0 5px rgb(66, 68, 68);
-  position: relative;
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 10s ease infinite;
-  -moz-animation: Gradient 10s ease infinite;
-  animation: Gradient 10s ease infinite !important;
-}
-@-webkit-keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@-moz-keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-/* 黑夜模式适配 */
-[data-theme="dark"] #aside-content > .card-widget.card-info {
-  background: #191919ee;
-}
-
-/* 个人信息Follow me按钮 */
-#aside-content > .card-widget.card-info > #card-info-btn {
-  background-color: #3eb8be;
-  border-radius: 8px;
-}
-
-:root {
-  --trans-light: rgba(255, 255, 255, 0.95);
-  --trans-dark: rgba(25, 25, 25, 0.95);
-  --border-style: 1px solid rgb(169, 169, 169);
-  --backdrop-filter: blur(5px) saturate(150%);
-}
-
-/* 首页文章卡片 */
-#recent-posts > .recent-post-item {
-  background: var(--trans-light);
-  backdrop-filter: var(--backdrop-filter);
-  border-radius: 25px;
-  border: var(--border-style);
-}
-
-/* 首页侧栏卡片 */
-#aside-content .card-widget {
-  background: var(--trans-light);
-  backdrop-filter: var(--backdrop-filter);
-  border-radius: 18px;
-  border: var(--border-style);
-}
-
-/* 文章页、归档页、普通页面 */
-div#post,
-div#page,
-div#archive {
-  background: var(--trans-light);
-  backdrop-filter: var(--backdrop-filter);
-  border: var(--border-style);
-  border-radius: 20px;
-}
-
-/* 导航栏 */
-#page-header.nav-fixed #nav {
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: var(--backdrop-filter);
-}
-
-[data-theme="dark"] #page-header.nav-fixed #nav {
-  background: rgba(0, 0, 0, 0.7) !important;
-}
-
-/* 夜间模式遮罩 */
-[data-theme="dark"] #recent-posts > .recent-post-item,
-[data-theme="dark"] #aside-content .card-widget,
-[data-theme="dark"] div#post,
-[data-theme="dark"] div#archive,
-[data-theme="dark"] div#page {
-  background: var(--trans-dark);
-}
-
-
-/* 夜间模式页脚页头遮罩透明 */
-[data-theme="dark"] #footer::before {
-  background: transparent !important;
-}
-[data-theme="dark"] #page-header::before {
-  background: transparent !important;
-}
-
-/* 阅读模式 */
-.read-mode #aside-content .card-widget {
-  background: rgba(158, 204, 171, 0.5) !important;
-}
-.read-mode div#post {
-  background: rgba(158, 204, 171, 0.5) !important;
-}
-
-/* 夜间模式下的阅读模式 */
-[data-theme="dark"] .read-mode #aside-content .card-widget {
-  background: rgba(25, 25, 25, 0.9) !important;
-  color: #ffffff;
-}
-[data-theme="dark"] .read-mode div#post {
-  background: rgba(25, 25, 25, 0.9) !important;
-  color: #ffffff;
-}
-
-/* 欢迎信息 */
-#welcome-info {
-  background: linear-gradient(45deg, #b9f4f3, #e3fbf9);
-  border-radius: 18px;
-  padding: 8px;
-}
-[data-theme="dark"] #welcome-info {
-  background: #212121;
-}]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/css/factor.css</url>
-    <content><![CDATA[/* 颜色 */
-:root {
-    --anzhiyu-theme-op: #4259ef23;
-    --anzhiyu-card-bg-none: rgba(255, 255, 255, 0);
-    --anzhiyu-main-op-deep: var(--anzhiyu-theme-op-deep) !important;
-    --anzhiyu-gray-op: #9999992b;
-    --anzhiyu-theme-top: var(--anzhiyu-theme);
-    --anzhiyu-white: #fff;
-    --anzhiyu-white-op: rgba(255, 255, 255, 0.2);
-    --anzhiyu-black: #000;
-    --anzhiyu-black-op: rgba(0, 0, 0, 0.2);
-    --anzhiyu-none: rgba(0, 0, 0, 0);
-    --anzhiyu-gray: #999999;
-    --anzhiyu-yellow: #ffc93e;
-    --anzhiyu-orange: #e38100;
-    --anzhiyu-border-radius: 8px;
-    --anzhiyu-main: var(--anzhiyu-theme);
-    --anzhiyu-main-op: var(--anzhiyu-theme-op);
-    --anzhiyu-shadow-theme: 0 8px 12px -3px var(--anzhiyu-theme-op);
-    --anzhiyu-shadow-main: 0 8px 12px -3px var(--anzhiyu-main-op);
-    --anzhiyu-shadow-blue: 0 8px 12px -3px rgba(40, 109, 234, 0.2);
-    --anzhiyu-shadow-white: 0 8px 12px -3px rgba(255, 255, 255, 0.2);
-    --anzhiyu-shadow-black: 0 0 12px 4px rgba(0, 0, 0, 0.05);
-    --anzhiyu-shadow-yellow: 0px 38px 77px -26px rgba(255, 201, 62, 0.12);
-    --anzhiyu-shadow-red: 0 8px 12px -3px #ee7d7936;
-    --anzhiyu-shadow-green: 0 8px 12px -3px #87ee7936;
-    --anzhiyu-shadow-border: 0 8px 16px -4px #2c2d300c;
-    --anzhiyu-shadow-blackdeep: 0 2px 16px -3px rgba(0, 0, 0, 0.15);
-    --anzhiyu-logo-color: linear-gradient(215deg, #4584ff 30%, #ff7676 70%);
-    --style-border: 1px solid var(--anzhiyu-card-border);
-    --anzhiyu-blue-main: #3b70fc;
-    --style-border-hover: 1px solid var(--anzhiyu-main);
-    --style-border-dashed: 1px dashed var(--anzhiyu-theme-op);
-    --style-border-avatar: 4px solid var(--anzhiyu-background);
-    --style-border-always: 1px solid var(--anzhiyu-card-border);
-    --style-border-none: 1px solid transparent;
-    --anzhiyu-white-acrylic1: #fefeff !important;
-    --anzhiyu-white-acrylic2: #fcfdff !important;
-    --anzhiyu-black-acrylic2: #08080a !important;
-    --anzhiyu-black-acrylic1: #0b0b0e !important;
-    --anzhiyu-main-none: #b8b8b800 !important;
-  }
-  
-  [data-theme="light"] {
-    --anzhiyu-theme-op-deep: #4259efdd;
-    --global-bg: #f7f9fe;
-    --anzhiyu-theme: #3b70fc;
-    --anzhiyu-theme-deep: #1856fb;
-    --anzhiyu-theme-op: #4259ef23;
-    --anzhiyu-blue: #3b70fc;
-    --anzhiyu-red: #d8213c;
-    --anzhiyu-pink: #ff7c7c;
-    --anzhiyu-green: #57bd6a;
-    --anzhiyu-fontcolor: #363636;
-    --anzhiyu-background: #f7f9fe;
-    --anzhiyu-reverse: #000;
-    --anzhiyu-maskbg: rgba(255, 255, 255, 0.6);
-    --anzhiyu-maskbgdeep: rgba(255, 255, 255, 0.85);
-    --anzhiyu-hovertext: var(--anzhiyu-theme);
-    --anzhiyu-ahoverbg: #f7f7fa;
-    --anzhiyu-lighttext: var(--anzhiyu-main);
-    --anzhiyu-secondtext: rgba(60, 60, 67, 0.6);
-    --anzhiyu-scrollbar: rgba(60, 60, 67, 0.4);
-    --anzhiyu-card-btn-bg: #edf0f7;
-    --anzhiyu-post-blockquote-bg: #fafcff;
-    --anzhiyu-post-tabs-bg: #f2f5f8;
-    --anzhiyu-secondbg: #f1f3f8;
-    --anzhiyu-shadow-nav: 0 5px 12px -5px rgba(102, 68, 68, 0.05);
-    --anzhiyu-card-bg: #fff;
-    --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102, 68, 68, 0);
-    --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102, 68, 68, 0);
-    --anzhiyu-card-border: #e3e8f7;
-  }
-  
-  [data-theme="dark"] {
-    --anzhiyu-theme-op-deep: #0084ffdd;
-    --global-bg: #18171d;
-    --anzhiyu-theme: #0084ff;
-    --anzhiyu-theme-deep: #0076e5;
-    --anzhiyu-theme-op: #0084ff23;
-    --anzhiyu-blue: #0084ff;
-    --anzhiyu-red: #ff3842;
-    --anzhiyu-pink: #ff7c7c;
-    --anzhiyu-green: #57bd6a;
-    --anzhiyu-fontcolor: #f7f7fa;
-    --anzhiyu-background: #18171d;
-    --anzhiyu-reverse: #fff;
-    --anzhiyu-maskbg: rgba(0, 0, 0, 0.6);
-    --anzhiyu-maskbgdeep: rgba(0, 0, 0, 0.85);
-    --anzhiyu-hovertext: #0a84ff;
-    --anzhiyu-ahoverbg: #fff;
-    --anzhiyu-lighttext: #f2b94b;
-    --anzhiyu-secondtext: #a1a2b8;
-    --anzhiyu-scrollbar: rgba(200, 200, 223, 0.4);
-    --anzhiyu-card-btn-bg: #30343f;
-    --anzhiyu-post-blockquote-bg: #000;
-    --anzhiyu-post-tabs-bg: #121212;
-    --anzhiyu-secondbg: #30343f;
-    --anzhiyu-shadow-nav: 0 5px 20px 0px rgba(28, 28, 28, 0.4);
-    --anzhiyu-card-bg: #1d1b26;
-    --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102, 68, 68, 0);
-    --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102, 68, 68, 0);
-    --anzhiyu-card-border: #42444a;
-  }]]></content>
-  </entry>
-  <entry>
-    <title>友链</title>
-    <url>/link/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/css/universe.css</url>
-    <content><![CDATA[/* 背景宇宙星光  */
-#universe{
-    display: block;
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */
-    z-index: -1;
-  }]]></content>
-  </entry>
-  <entry>
     <title>关于</title>
     <url>/about/index.html</url>
     <content><![CDATA[<h1 id="为什么要写博客呢？"><a href="#为什么要写博客呢？" class="headerlink" title="为什么要写博客呢？"></a>为什么要写博客呢？</h1><h2 id="为了分享一些信息"><a href="#为了分享一些信息" class="headerlink" title="为了分享一些信息"></a>为了分享一些信息</h2><blockquote>
@@ -553,8 +186,77 @@ div#archive {
 <p> 生命短暂，岁月无常。也许几年或者几个月之后，甚至是几天之后，再回首看之前的文章也许会有新的感悟。</p>
 <div class="timeline blue"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>本站更改</p>
 </div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2023-05-11</p>
-</div></div><div class='timeline-item-content'><p>增加了手机端的白天黑夜图</p>
+</div></div><div class='timeline-item-content'><p>增加了手机端的白天黑夜图(失败，版本等级过高了)</p>
 </div></div></div>
+]]></content>
+  </entry>
+  <entry>
+    <title>分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>charts</title>
+    <url>/charts/index.html</url>
+    <content><![CDATA[<!-- 文章发布时间统计图 -->
+<div id="posts-chart" data-start="2023-04" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
+<!-- 文章标签统计图 -->
+<div id="tags-chart" data-length="10" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
+<!-- 文章分类统计图 -->
+<div id="categories-chart" data-parent="ture" style="border-radius: 8px; height: 300px; padding: 10px;"></div>]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/js/runtime.js</url>
+    <content><![CDATA[// 获取当前时间
+var now = new Date();
+
+// 创建运行时间和旅行者1号距离的函数
+function createTime() {
+  now.setTime(now.getTime() + 1000);
+  
+  // 计算运行时间
+  var startDate = new Date("2023/04/13 00:00:00");
+  var distance = Math.trunc(234e8 + (now - startDate) / 1000 * 17);
+  
+  // 将距离转换为天文单位
+  var au = (distance / 1496e5).toFixed(6);
+  
+  // 计算从指定日期开始的天数、小时数、分钟数和秒数
+  var targetDate = new Date("2023/04/13 00:00:00");
+  var diffInSeconds = (now - targetDate) / 1000;
+  var days = Math.floor(diffInSeconds / 86400);
+  var hours = Math.floor((diffInSeconds % 86400) / 3600);
+  var minutes = Math.floor((diffInSeconds % 3600) / 60);
+  var seconds = Math.round(diffInSeconds % 60);
+  
+  // 格式化小时、分钟和秒
+  hours = hours < 10 ? "0" + hours : hours;
+  minutes = minutes < 10 ? "0" + minutes : minutes;
+  seconds = seconds < 10 ? "0" + seconds : seconds;
+  
+  // 生成要显示的内容
+  var content = hours >= 9 && hours < 18
+    ? `<div style="font-size:13px;font-weight:bold">
+         本站居然运行了 ${days} 天 ${hours} 小时 ${minutes} 分 ${seconds} 秒
+         <i id="heartbeat" class='fas fa-heartbeat'></i> <br>
+         旅行者 1 号当前距离地球 ${distance} 千米，约为 ${au} 个天文单位 🚀
+       </div>`
+    : `<div style="font-size:13px;font-weight:bold">
+         本站居然运行了 ${days} 天 ${hours} 小时 ${minutes} 分 ${seconds} 秒
+         <i id="heartbeat" class='fas fa-heartbeat'></i> <br>
+         旅行者 1 号当前距离地球 ${distance} 千米，约为 ${au} 个天文单位 🚀
+       </div>`;
+  
+  // 将内容显示在页面上
+  if (document.getElementById("workboard")) {
+    document.getElementById("workboard").innerHTML = content;
+  }
+}
+
+// 每秒更新一次内容
+setInterval(createTime, 1000);
+
 ]]></content>
   </entry>
   <entry>
@@ -789,73 +491,376 @@ document.addEventListener('pjax:complete', showWelcome);
   </entry>
   <entry>
     <title></title>
+    <url>/css/custom.css</url>
+    <content><![CDATA[/* 页脚与头图透明 */
+#footer {
+    background: transparent !important;
+  }
+  #page-header {
+    background: transparent !important;
+  }
+  
+  /* 白天模式遮罩透明 */
+  #footer::before {
+    background: transparent !important;
+  }
+  #page-header::before {
+    background: transparent !important;
+  }
+  
+  /* 夜间模式遮罩透明 */
+  [data-theme="dark"] #footer::before {
+    background: transparent !important;
+  }
+  [data-theme="dark"] #page-header::before {
+    background: transparent !important;
+  }
+
+@font-face {
+  /* 为载入的字体取名字(随意) */
+  font-family: 'YSHST';	
+  /* 字体文件地址(相对或者绝对路径都可以) */
+  src: url(/font/优设好身体.woff2);
+    /* 定义加粗样式(加粗多少) */
+  font-weight: normal;
+    /* 定义字体样式(斜体/非斜体) */
+  font-style: normal;
+    /* 定义显示样式 */
+  font-display: block;
+  }
+
+
+
+/* 翻页按钮居中 */
+#pagination {
+  width: 100%;
+  margin: auto;
+}
+
+
+
+  .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+    left: -66px !important;
+    /* 默认情况下缩进左侧66px，只留一点箭头部分 */
+  }
+  
+  .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+    left: 0 !important;
+    /* 鼠标悬停是左侧缩进归零，完全显示按钮 */
+  }
+
+  /* 一级菜单居中 */
+#nav .menus_items {
+  position: absolute !important;
+  width: fit-content !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+/* 子菜单横向展示 */
+#nav .menus_items .menus_item:hover .menus_item_child {
+  display: flex !important;
+}
+/* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */
+.menus_items .menus_item:nth-child(2) .menus_item_child {
+  left: -125px;
+}
+
+
+/* 侧边栏个人信息卡片动态渐变色 */
+#aside-content > .card-widget.card-info {
+  background: linear-gradient(
+    -45deg,
+    #c0c0c0, /* Silver */
+    #add8e6,/* Light Blue */
+    #FFFFFF,
+    #B0C4DE,
+    #FFFFFF,
+    #D3D3D3
+  );
+  box-shadow: 0 0 5px rgb(66, 68, 68);
+  position: relative;
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 10s ease infinite;
+  -moz-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite !important;
+}
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* 黑夜模式适配 */
+[data-theme="dark"] #aside-content > .card-widget.card-info {
+  background: #191919ee;
+}
+
+/* 个人信息Follow me按钮 */
+#aside-content > .card-widget.card-info > #card-info-btn {
+  background-color: #3eb8be;
+  border-radius: 8px;
+}
+
+:root {
+  --trans-light: rgba(255, 255, 255, 0.95);
+  --trans-dark: rgba(25, 25, 25, 0.95);
+  --border-style: 1px solid rgb(169, 169, 169);
+  --backdrop-filter: blur(5px) saturate(150%);
+}
+
+/* 首页文章卡片 */
+#recent-posts > .recent-post-item {
+  background: var(--trans-light);
+  backdrop-filter: var(--backdrop-filter);
+  border-radius: 25px;
+  border: var(--border-style);
+}
+
+/* 首页侧栏卡片 */
+#aside-content .card-widget {
+  background: var(--trans-light);
+  backdrop-filter: var(--backdrop-filter);
+  border-radius: 18px;
+  border: var(--border-style);
+}
+
+/* 文章页、归档页、普通页面 */
+div#post,
+div#page,
+div#archive {
+  background: var(--trans-light);
+  backdrop-filter: var(--backdrop-filter);
+  border: var(--border-style);
+  border-radius: 20px;
+}
+
+/* 导航栏 */
+#page-header.nav-fixed #nav {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: var(--backdrop-filter);
+}
+
+[data-theme="dark"] #page-header.nav-fixed #nav {
+  background: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* 夜间模式遮罩 */
+[data-theme="dark"] #recent-posts > .recent-post-item,
+[data-theme="dark"] #aside-content .card-widget,
+[data-theme="dark"] div#post,
+[data-theme="dark"] div#archive,
+[data-theme="dark"] div#page {
+  background: var(--trans-dark);
+}
+
+
+/* 夜间模式页脚页头遮罩透明 */
+[data-theme="dark"] #footer::before {
+  background: transparent !important;
+}
+[data-theme="dark"] #page-header::before {
+  background: transparent !important;
+}
+
+/* 阅读模式 */
+.read-mode #aside-content .card-widget {
+  background: rgba(158, 204, 171, 0.5) !important;
+}
+.read-mode div#post {
+  background: rgba(158, 204, 171, 0.5) !important;
+}
+
+/* 夜间模式下的阅读模式 */
+[data-theme="dark"] .read-mode #aside-content .card-widget {
+  background: rgba(25, 25, 25, 0.9) !important;
+  color: #ffffff;
+}
+[data-theme="dark"] .read-mode div#post {
+  background: rgba(25, 25, 25, 0.9) !important;
+  color: #ffffff;
+}
+
+/* 欢迎信息 */
+#welcome-info {
+  background: linear-gradient(45deg, #b9f4f3, #e3fbf9);
+  border-radius: 18px;
+  padding: 8px;
+}
+[data-theme="dark"] #welcome-info {
+  background: #212121;
+}]]></content>
+  </entry>
+  <entry>
+    <title></title>
     <url>/js/universe.js</url>
     <content><![CDATA[function dark() {window.requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var n,e,i,h,t=.05,s=document.getElementById("universe"),o=!0,a="180,184,240",r="226,225,142",d="226,225,224",c=[];function f(){n=window.innerWidth,e=window.innerHeight,i=.216*n,s.setAttribute("width",n),s.setAttribute("height",e)}function u(){h.clearRect(0,0,n,e);for(var t=c.length,i=0;i<t;i++){var s=c[i];s.move(),s.fadeIn(),s.fadeOut(),s.draw()}}function y(){this.reset=function(){this.giant=m(3),this.comet=!this.giant&&!o&&m(10),this.x=l(0,n-10),this.y=l(0,e),this.r=l(1.1,2.6),this.dx=l(t,6*t)+(this.comet+1-1)*t*l(50,120)+2*t,this.dy=-l(t,6*t)-(this.comet+1-1)*t*l(50,120),this.fadingOut=null,this.fadingIn=!0,this.opacity=0,this.opacityTresh=l(.2,1-.4*(this.comet+1-1)),this.do=l(5e-4,.002)+.001*(this.comet+1-1)},this.fadeIn=function(){this.fadingIn&&(this.fadingIn=!(this.opacity>this.opacityTresh),this.opacity+=this.do)},this.fadeOut=function(){this.fadingOut&&(this.fadingOut=!(this.opacity<0),this.opacity-=this.do/2,(this.x>n||this.y<0)&&(this.fadingOut=!1,this.reset()))},this.draw=function(){if(h.beginPath(),this.giant)h.fillStyle="rgba("+a+","+this.opacity+")",h.arc(this.x,this.y,2,0,2*Math.PI,!1);else if(this.comet){h.fillStyle="rgba("+d+","+this.opacity+")",h.arc(this.x,this.y,1.5,0,2*Math.PI,!1);for(var t=0;t<30;t++)h.fillStyle="rgba("+d+","+(this.opacity-this.opacity/20*t)+")",h.rect(this.x-this.dx/4*t,this.y-this.dy/4*t-2,2,2),h.fill()}else h.fillStyle="rgba("+r+","+this.opacity+")",h.rect(this.x,this.y,this.r,this.r);h.closePath(),h.fill()},this.move=function(){this.x+=this.dx,this.y+=this.dy,!1===this.fadingOut&&this.reset(),(this.x>n-n/4||this.y<0)&&(this.fadingOut=!0)},setTimeout(function(){o=!1},50)}function m(t){return Math.floor(1e3*Math.random())+1<10*t}function l(t,i){return Math.random()*(i-t)+t}f(),window.addEventListener("resize",f,!1),function(){h=s.getContext("2d");for(var t=0;t<i;t++)c[t]=new y,c[t].reset();u()}(),function t(){document.getElementsByTagName('html')[0].getAttribute('data-theme')=='dark'&&u(),window.requestAnimationFrame(t)}()};
 dark()]]></content>
   </entry>
   <entry>
     <title></title>
-    <url>/js/runtime.js</url>
-    <content><![CDATA[// 获取当前时间
-var now = new Date();
-
-// 创建运行时间和旅行者1号距离的函数
-function createTime() {
-  now.setTime(now.getTime() + 1000);
-  
-  // 计算运行时间
-  var startDate = new Date("2023/04/13 00:00:00");
-  var distance = Math.trunc(234e8 + (now - startDate) / 1000 * 17);
-  
-  // 将距离转换为天文单位
-  var au = (distance / 1496e5).toFixed(6);
-  
-  // 计算从指定日期开始的天数、小时数、分钟数和秒数
-  var targetDate = new Date("2023/04/13 00:00:00");
-  var diffInSeconds = (now - targetDate) / 1000;
-  var days = Math.floor(diffInSeconds / 86400);
-  var hours = Math.floor((diffInSeconds % 86400) / 3600);
-  var minutes = Math.floor((diffInSeconds % 3600) / 60);
-  var seconds = Math.round(diffInSeconds % 60);
-  
-  // 格式化小时、分钟和秒
-  hours = hours < 10 ? "0" + hours : hours;
-  minutes = minutes < 10 ? "0" + minutes : minutes;
-  seconds = seconds < 10 ? "0" + seconds : seconds;
-  
-  // 生成要显示的内容
-  var content = hours >= 9 && hours < 18
-    ? `<div style="font-size:13px;font-weight:bold">
-         本站居然运行了 ${days} 天 ${hours} 小时 ${minutes} 分 ${seconds} 秒
-         <i id="heartbeat" class='fas fa-heartbeat'></i> <br>
-         旅行者 1 号当前距离地球 ${distance} 千米，约为 ${au} 个天文单位 🚀
-       </div>`
-    : `<div style="font-size:13px;font-weight:bold">
-         本站居然运行了 ${days} 天 ${hours} 小时 ${minutes} 分 ${seconds} 秒
-         <i id="heartbeat" class='fas fa-heartbeat'></i> <br>
-         旅行者 1 号当前距离地球 ${distance} 千米，约为 ${au} 个天文单位 🚀
-       </div>`;
-  
-  // 将内容显示在页面上
-  if (document.getElementById("workboard")) {
-    document.getElementById("workboard").innerHTML = content;
+    <url>/css/factor.css</url>
+    <content><![CDATA[/* 颜色 */
+:root {
+    --anzhiyu-theme-op: #4259ef23;
+    --anzhiyu-card-bg-none: rgba(255, 255, 255, 0);
+    --anzhiyu-main-op-deep: var(--anzhiyu-theme-op-deep) !important;
+    --anzhiyu-gray-op: #9999992b;
+    --anzhiyu-theme-top: var(--anzhiyu-theme);
+    --anzhiyu-white: #fff;
+    --anzhiyu-white-op: rgba(255, 255, 255, 0.2);
+    --anzhiyu-black: #000;
+    --anzhiyu-black-op: rgba(0, 0, 0, 0.2);
+    --anzhiyu-none: rgba(0, 0, 0, 0);
+    --anzhiyu-gray: #999999;
+    --anzhiyu-yellow: #ffc93e;
+    --anzhiyu-orange: #e38100;
+    --anzhiyu-border-radius: 8px;
+    --anzhiyu-main: var(--anzhiyu-theme);
+    --anzhiyu-main-op: var(--anzhiyu-theme-op);
+    --anzhiyu-shadow-theme: 0 8px 12px -3px var(--anzhiyu-theme-op);
+    --anzhiyu-shadow-main: 0 8px 12px -3px var(--anzhiyu-main-op);
+    --anzhiyu-shadow-blue: 0 8px 12px -3px rgba(40, 109, 234, 0.2);
+    --anzhiyu-shadow-white: 0 8px 12px -3px rgba(255, 255, 255, 0.2);
+    --anzhiyu-shadow-black: 0 0 12px 4px rgba(0, 0, 0, 0.05);
+    --anzhiyu-shadow-yellow: 0px 38px 77px -26px rgba(255, 201, 62, 0.12);
+    --anzhiyu-shadow-red: 0 8px 12px -3px #ee7d7936;
+    --anzhiyu-shadow-green: 0 8px 12px -3px #87ee7936;
+    --anzhiyu-shadow-border: 0 8px 16px -4px #2c2d300c;
+    --anzhiyu-shadow-blackdeep: 0 2px 16px -3px rgba(0, 0, 0, 0.15);
+    --anzhiyu-logo-color: linear-gradient(215deg, #4584ff 30%, #ff7676 70%);
+    --style-border: 1px solid var(--anzhiyu-card-border);
+    --anzhiyu-blue-main: #3b70fc;
+    --style-border-hover: 1px solid var(--anzhiyu-main);
+    --style-border-dashed: 1px dashed var(--anzhiyu-theme-op);
+    --style-border-avatar: 4px solid var(--anzhiyu-background);
+    --style-border-always: 1px solid var(--anzhiyu-card-border);
+    --style-border-none: 1px solid transparent;
+    --anzhiyu-white-acrylic1: #fefeff !important;
+    --anzhiyu-white-acrylic2: #fcfdff !important;
+    --anzhiyu-black-acrylic2: #08080a !important;
+    --anzhiyu-black-acrylic1: #0b0b0e !important;
+    --anzhiyu-main-none: #b8b8b800 !important;
   }
-}
-
-// 每秒更新一次内容
-setInterval(createTime, 1000);
-
-]]></content>
+  
+  [data-theme="light"] {
+    --anzhiyu-theme-op-deep: #4259efdd;
+    --global-bg: #f7f9fe;
+    --anzhiyu-theme: #3b70fc;
+    --anzhiyu-theme-deep: #1856fb;
+    --anzhiyu-theme-op: #4259ef23;
+    --anzhiyu-blue: #3b70fc;
+    --anzhiyu-red: #d8213c;
+    --anzhiyu-pink: #ff7c7c;
+    --anzhiyu-green: #57bd6a;
+    --anzhiyu-fontcolor: #363636;
+    --anzhiyu-background: #f7f9fe;
+    --anzhiyu-reverse: #000;
+    --anzhiyu-maskbg: rgba(255, 255, 255, 0.6);
+    --anzhiyu-maskbgdeep: rgba(255, 255, 255, 0.85);
+    --anzhiyu-hovertext: var(--anzhiyu-theme);
+    --anzhiyu-ahoverbg: #f7f7fa;
+    --anzhiyu-lighttext: var(--anzhiyu-main);
+    --anzhiyu-secondtext: rgba(60, 60, 67, 0.6);
+    --anzhiyu-scrollbar: rgba(60, 60, 67, 0.4);
+    --anzhiyu-card-btn-bg: #edf0f7;
+    --anzhiyu-post-blockquote-bg: #fafcff;
+    --anzhiyu-post-tabs-bg: #f2f5f8;
+    --anzhiyu-secondbg: #f1f3f8;
+    --anzhiyu-shadow-nav: 0 5px 12px -5px rgba(102, 68, 68, 0.05);
+    --anzhiyu-card-bg: #fff;
+    --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102, 68, 68, 0);
+    --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102, 68, 68, 0);
+    --anzhiyu-card-border: #e3e8f7;
+  }
+  
+  [data-theme="dark"] {
+    --anzhiyu-theme-op-deep: #0084ffdd;
+    --global-bg: #18171d;
+    --anzhiyu-theme: #0084ff;
+    --anzhiyu-theme-deep: #0076e5;
+    --anzhiyu-theme-op: #0084ff23;
+    --anzhiyu-blue: #0084ff;
+    --anzhiyu-red: #ff3842;
+    --anzhiyu-pink: #ff7c7c;
+    --anzhiyu-green: #57bd6a;
+    --anzhiyu-fontcolor: #f7f7fa;
+    --anzhiyu-background: #18171d;
+    --anzhiyu-reverse: #fff;
+    --anzhiyu-maskbg: rgba(0, 0, 0, 0.6);
+    --anzhiyu-maskbgdeep: rgba(0, 0, 0, 0.85);
+    --anzhiyu-hovertext: #0a84ff;
+    --anzhiyu-ahoverbg: #fff;
+    --anzhiyu-lighttext: #f2b94b;
+    --anzhiyu-secondtext: #a1a2b8;
+    --anzhiyu-scrollbar: rgba(200, 200, 223, 0.4);
+    --anzhiyu-card-btn-bg: #30343f;
+    --anzhiyu-post-blockquote-bg: #000;
+    --anzhiyu-post-tabs-bg: #121212;
+    --anzhiyu-secondbg: #30343f;
+    --anzhiyu-shadow-nav: 0 5px 20px 0px rgba(28, 28, 28, 0.4);
+    --anzhiyu-card-bg: #1d1b26;
+    --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102, 68, 68, 0);
+    --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102, 68, 68, 0);
+    --anzhiyu-card-border: #42444a;
+  }]]></content>
   </entry>
   <entry>
-    <title>charts</title>
-    <url>/charts/index.html</url>
-    <content><![CDATA[<!-- 文章发布时间统计图 -->
-<div id="posts-chart" data-start="2023-04" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
-<!-- 文章标签统计图 -->
-<div id="tags-chart" data-length="10" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
-<!-- 文章分类统计图 -->
-<div id="categories-chart" data-parent="ture" style="border-radius: 8px; height: 300px; padding: 10px;"></div>]]></content>
+    <title></title>
+    <url>/css/universe.css</url>
+    <content><![CDATA[/* 背景宇宙星光  */
+#universe{
+    display: block;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */
+    z-index: -1;
+  }]]></content>
+  </entry>
+  <entry>
+    <title>音乐</title>
+    <url>/music/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>电影</title>
+    <url>/movies/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>树洞</title>
@@ -878,18 +883,13 @@ setInterval(createTime, 1000);
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
   </entry>
   <entry>
-    <title>电影</title>
-    <url>/movies/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>AI绘画</title>
     <url>/painting/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>音乐</title>
-    <url>/music/index.html</url>
+    <title>友链</title>
+    <url>/link/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
