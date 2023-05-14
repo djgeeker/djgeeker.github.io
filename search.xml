@@ -2303,34 +2303,39 @@
       </tags>
   </entry>
   <entry>
-    <title>关于</title>
-    <url>/about/index.html</url>
-    <content><![CDATA[<h1 id="为什么要写博客呢？"><a href="#为什么要写博客呢？" class="headerlink" title="为什么要写博客呢？"></a>为什么要写博客呢？</h1><h2 id="为了分享一些信息"><a href="#为了分享一些信息" class="headerlink" title="为了分享一些信息"></a>为了分享一些信息</h2><blockquote>
-<p>其实在在很多平台都能够发表文章和看法，但有的时候，审核会出问题，导致我想发的东西会被锁定。<br>在这里不会，我可以很<del>随心所欲</del>自由的发一些东西，当然基本上( •̀ ω •́ )y都是积极，健康，正能量的技术或者知识。</p>
-</blockquote>
-<h2 id="为了迎接人工智的浪潮"><a href="#为了迎接人工智的浪潮" class="headerlink" title="为了迎接人工智的浪潮"></a>为了迎接人工智的浪潮</h2><blockquote>
-<p>在当前这个时间节点来说，是一个AI技术大爆发的时代。当前组成AI最重要的三个方面</p>
-<ol>
-<li><strong>数据/语料</strong> 也就是我们说的话，是AI的地基，而我之后写的一些东西会尽量的往问答的形式去靠拢，如果之后真的发展到人手一个AI的话。我也能把这些当作语料去正则他的说话习惯，使他更符合我的说话方式（想的有点远）</li>
-<li><strong>算法</strong> 毕竟是计科生，还是要有梦想的，之后会多多学习。把自己总结的发到这里来，知识重组的过程也是不断学习和精进的过程，同时也许能帮助有需要的人。</li>
-<li><strong>算力</strong> 跟钱有关，这玩意可真的奔着硬件上去了，理论上只要你有钱能买到更多的显卡，你的算力越高就越有可能出现质变。</li>
-</ol>
-</blockquote>
-<h2 id="个人感觉很帅"><a href="#个人感觉很帅" class="headerlink" title="个人感觉很帅"></a>个人感觉很帅</h2><blockquote>
-<p>感觉自己做博客，就像是一个电子漂流瓶，不知道在网络里被谁捡到。就像在海边看到一个漂流瓶里面，也许就是一个奇奇怪怪的故事。这难道不酷吗？（何同学语气.png）</p>
-</blockquote>
-<hr>
-<p> 生命短暂，岁月无常。也许几年或者几个月之后，甚至是几天之后，再回首看之前的文章也许会有新的感悟。</p>
-<div class="timeline blue"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>本站更改</p>
-</div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2023-05-11</p>
-</div></div><div class='timeline-item-content'><p>增加了手机端的白天黑夜图(失败，版本等级过高了)</p>
-</div></div></div>
-]]></content>
-  </entry>
-  <entry>
     <title>分类</title>
     <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>charts</title>
+    <url>/charts/index.html</url>
+    <content><![CDATA[<!-- 文章发布时间统计图 -->
+<div id="posts-chart" data-start="2023-04" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
+<!-- 文章标签统计图 -->
+<div id="tags-chart" data-length="10" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
+<!-- 文章分类统计图 -->
+<div id="categories-chart" data-parent="ture" style="border-radius: 8px; height: 300px; padding: 10px;"></div>]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/css/universe.css</url>
+    <content><![CDATA[/* 背景宇宙星光  */
+#universe{
+    display: block;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */
+    z-index: -1;
+  }]]></content>
   </entry>
   <entry>
     <title></title>
@@ -2441,36 +2446,6 @@
   }]]></content>
   </entry>
   <entry>
-    <title>charts</title>
-    <url>/charts/index.html</url>
-    <content><![CDATA[<!-- 文章发布时间统计图 -->
-<div id="posts-chart" data-start="2023-04" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
-<!-- 文章标签统计图 -->
-<div id="tags-chart" data-length="10" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
-<!-- 文章分类统计图 -->
-<div id="categories-chart" data-parent="ture" style="border-radius: 8px; height: 300px; padding: 10px;"></div>]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/css/universe.css</url>
-    <content><![CDATA[/* 背景宇宙星光  */
-#universe{
-    display: block;
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */
-    z-index: -1;
-  }]]></content>
-  </entry>
-  <entry>
     <title></title>
     <url>/js/runtime.js</url>
     <content><![CDATA[// 获取当前时间
@@ -2523,17 +2498,6 @@ function createTime() {
 setInterval(createTime, 1000);
 
 ]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/js/universe.js</url>
-    <content><![CDATA[function dark() {window.requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var n,e,i,h,t=.05,s=document.getElementById("universe"),o=!0,a="180,184,240",r="226,225,142",d="226,225,224",c=[];function f(){n=window.innerWidth,e=window.innerHeight,i=.216*n,s.setAttribute("width",n),s.setAttribute("height",e)}function u(){h.clearRect(0,0,n,e);for(var t=c.length,i=0;i<t;i++){var s=c[i];s.move(),s.fadeIn(),s.fadeOut(),s.draw()}}function y(){this.reset=function(){this.giant=m(3),this.comet=!this.giant&&!o&&m(10),this.x=l(0,n-10),this.y=l(0,e),this.r=l(1.1,2.6),this.dx=l(t,6*t)+(this.comet+1-1)*t*l(50,120)+2*t,this.dy=-l(t,6*t)-(this.comet+1-1)*t*l(50,120),this.fadingOut=null,this.fadingIn=!0,this.opacity=0,this.opacityTresh=l(.2,1-.4*(this.comet+1-1)),this.do=l(5e-4,.002)+.001*(this.comet+1-1)},this.fadeIn=function(){this.fadingIn&&(this.fadingIn=!(this.opacity>this.opacityTresh),this.opacity+=this.do)},this.fadeOut=function(){this.fadingOut&&(this.fadingOut=!(this.opacity<0),this.opacity-=this.do/2,(this.x>n||this.y<0)&&(this.fadingOut=!1,this.reset()))},this.draw=function(){if(h.beginPath(),this.giant)h.fillStyle="rgba("+a+","+this.opacity+")",h.arc(this.x,this.y,2,0,2*Math.PI,!1);else if(this.comet){h.fillStyle="rgba("+d+","+this.opacity+")",h.arc(this.x,this.y,1.5,0,2*Math.PI,!1);for(var t=0;t<30;t++)h.fillStyle="rgba("+d+","+(this.opacity-this.opacity/20*t)+")",h.rect(this.x-this.dx/4*t,this.y-this.dy/4*t-2,2,2),h.fill()}else h.fillStyle="rgba("+r+","+this.opacity+")",h.rect(this.x,this.y,this.r,this.r);h.closePath(),h.fill()},this.move=function(){this.x+=this.dx,this.y+=this.dy,!1===this.fadingOut&&this.reset(),(this.x>n-n/4||this.y<0)&&(this.fadingOut=!0)},setTimeout(function(){o=!1},50)}function m(t){return Math.floor(1e3*Math.random())+1<10*t}function l(t,i){return Math.random()*(i-t)+t}f(),window.addEventListener("resize",f,!1),function(){h=s.getContext("2d");for(var t=0;t<i;t++)c[t]=new y,c[t].reset();u()}(),function t(){document.getElementsByTagName('html')[0].getAttribute('data-theme')=='dark'&&u(),window.requestAnimationFrame(t)}()};
-dark()]]></content>
-  </entry>
-  <entry>
-    <title>电影</title>
-    <url>/movies/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title></title>
@@ -2995,8 +2959,62 @@ document.addEventListener('pjax:complete', showWelcome);
 ]]></content>
   </entry>
   <entry>
+    <title>电影</title>
+    <url>/movies/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>友链</title>
     <url>/link/index.html</url>
+    <content><![CDATA[<h2 id="本站友链信息"><a href="#本站友链信息" class="headerlink" title="本站友链信息"></a>本站友链信息</h2><blockquote>
+<p>name：淡云墨雨~blog<br>link: <a href="https://djgeeker.com">https://djgeeker.com</a><br>avatar(头像): <a href="https://im-bed1.pages.dev/xiaotu/touxiang.png">https://im-bed1.pages.dev/xiaotu/touxiang.png</a><br>descr(描述)：想让每个平凡的日子里溢出欢喜（AI绘画研习者）<br>siteshot(站点截图): <a href="https://im-bed1.pages.dev/youlian/danyunmoyu.png">https://im-bed1.pages.dev/youlian/danyunmoyu.png</a> </p>
+</blockquote>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/js/universe.js</url>
+    <content><![CDATA[function dark() {window.requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var n,e,i,h,t=.05,s=document.getElementById("universe"),o=!0,a="180,184,240",r="226,225,142",d="226,225,224",c=[];function f(){n=window.innerWidth,e=window.innerHeight,i=.216*n,s.setAttribute("width",n),s.setAttribute("height",e)}function u(){h.clearRect(0,0,n,e);for(var t=c.length,i=0;i<t;i++){var s=c[i];s.move(),s.fadeIn(),s.fadeOut(),s.draw()}}function y(){this.reset=function(){this.giant=m(3),this.comet=!this.giant&&!o&&m(10),this.x=l(0,n-10),this.y=l(0,e),this.r=l(1.1,2.6),this.dx=l(t,6*t)+(this.comet+1-1)*t*l(50,120)+2*t,this.dy=-l(t,6*t)-(this.comet+1-1)*t*l(50,120),this.fadingOut=null,this.fadingIn=!0,this.opacity=0,this.opacityTresh=l(.2,1-.4*(this.comet+1-1)),this.do=l(5e-4,.002)+.001*(this.comet+1-1)},this.fadeIn=function(){this.fadingIn&&(this.fadingIn=!(this.opacity>this.opacityTresh),this.opacity+=this.do)},this.fadeOut=function(){this.fadingOut&&(this.fadingOut=!(this.opacity<0),this.opacity-=this.do/2,(this.x>n||this.y<0)&&(this.fadingOut=!1,this.reset()))},this.draw=function(){if(h.beginPath(),this.giant)h.fillStyle="rgba("+a+","+this.opacity+")",h.arc(this.x,this.y,2,0,2*Math.PI,!1);else if(this.comet){h.fillStyle="rgba("+d+","+this.opacity+")",h.arc(this.x,this.y,1.5,0,2*Math.PI,!1);for(var t=0;t<30;t++)h.fillStyle="rgba("+d+","+(this.opacity-this.opacity/20*t)+")",h.rect(this.x-this.dx/4*t,this.y-this.dy/4*t-2,2,2),h.fill()}else h.fillStyle="rgba("+r+","+this.opacity+")",h.rect(this.x,this.y,this.r,this.r);h.closePath(),h.fill()},this.move=function(){this.x+=this.dx,this.y+=this.dy,!1===this.fadingOut&&this.reset(),(this.x>n-n/4||this.y<0)&&(this.fadingOut=!0)},setTimeout(function(){o=!1},50)}function m(t){return Math.floor(1e3*Math.random())+1<10*t}function l(t,i){return Math.random()*(i-t)+t}f(),window.addEventListener("resize",f,!1),function(){h=s.getContext("2d");for(var t=0;t<i;t++)c[t]=new y,c[t].reset();u()}(),function t(){document.getElementsByTagName('html')[0].getAttribute('data-theme')=='dark'&&u(),window.requestAnimationFrame(t)}()};
+dark()]]></content>
+  </entry>
+  <entry>
+    <title>AI绘画</title>
+    <url>/painting/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>关于</title>
+    <url>/about/index.html</url>
+    <content><![CDATA[<h1 id="为什么要写博客呢？"><a href="#为什么要写博客呢？" class="headerlink" title="为什么要写博客呢？"></a>为什么要写博客呢？</h1><h2 id="为了分享一些信息"><a href="#为了分享一些信息" class="headerlink" title="为了分享一些信息"></a>为了分享一些信息</h2><blockquote>
+<p>其实在在很多平台都能够发表文章和看法，但有的时候，审核会出问题，导致我想发的东西会被锁定。<br>在这里不会，我可以很<del>随心所欲</del>自由的发一些东西，当然基本上( •̀ ω •́ )y都是积极，健康，正能量的技术或者知识。</p>
+</blockquote>
+<h2 id="为了迎接人工智的浪潮"><a href="#为了迎接人工智的浪潮" class="headerlink" title="为了迎接人工智的浪潮"></a>为了迎接人工智的浪潮</h2><blockquote>
+<p>在当前这个时间节点来说，是一个AI技术大爆发的时代。当前组成AI最重要的三个方面</p>
+<ol>
+<li><strong>数据/语料</strong> 也就是我们说的话，是AI的地基，而我之后写的一些东西会尽量的往问答的形式去靠拢，如果之后真的发展到人手一个AI的话。我也能把这些当作语料去正则他的说话习惯，使他更符合我的说话方式（想的有点远）</li>
+<li><strong>算法</strong> 毕竟是计科生，还是要有梦想的，之后会多多学习。把自己总结的发到这里来，知识重组的过程也是不断学习和精进的过程，同时也许能帮助有需要的人。</li>
+<li><strong>算力</strong> 跟钱有关，这玩意可真的奔着硬件上去了，理论上只要你有钱能买到更多的显卡，你的算力越高就越有可能出现质变。</li>
+</ol>
+</blockquote>
+<h2 id="个人感觉很帅"><a href="#个人感觉很帅" class="headerlink" title="个人感觉很帅"></a>个人感觉很帅</h2><blockquote>
+<p>感觉自己做博客，就像是一个电子漂流瓶，不知道在网络里被谁捡到。就像在海边看到一个漂流瓶里面，也许就是一个奇奇怪怪的故事。这难道不酷吗？（何同学语气.png）</p>
+</blockquote>
+<hr>
+<p> 生命短暂，岁月无常。也许几年或者几个月之后，甚至是几天之后，再回首看之前的文章也许会有新的感悟。</p>
+<div class="timeline blue"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>本站更改</p>
+</div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2023-05-11</p>
+</div></div><div class='timeline-item-content'><p>增加了手机端的白天黑夜图(失败，版本等级过高了)</p>
+</div></div></div>
+]]></content>
+  </entry>
+  <entry>
+    <title>音乐</title>
+    <url>/music/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>标签页</title>
+    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -3018,20 +3036,5 @@ document.addEventListener('pjax:complete', showWelcome);
   </div>
 </div>
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-  </entry>
-  <entry>
-    <title>标签页</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>音乐</title>
-    <url>/music/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>AI绘画</title>
-    <url>/painting/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
 </search>
