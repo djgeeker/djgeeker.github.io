@@ -2315,6 +2315,50 @@
       </tags>
   </entry>
   <entry>
+    <title>charts</title>
+    <url>/charts/index.html</url>
+    <content><![CDATA[<!-- 文章发布时间统计图 -->
+<div id="posts-chart" data-start="2023-04" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
+<!-- 文章标签统计图 -->
+<div id="tags-chart" data-length="10" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
+<!-- 文章分类统计图 -->
+<div id="categories-chart" data-parent="ture" style="border-radius: 8px; height: 300px; padding: 10px;"></div>]]></content>
+  </entry>
+  <entry>
+    <title>分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>关于</title>
+    <url>/about/index.html</url>
+    <content><![CDATA[<h1 id="为什么要写博客呢？"><a href="#为什么要写博客呢？" class="headerlink" title="为什么要写博客呢？"></a>为什么要写博客呢？</h1><h2 id="为了分享一些信息"><a href="#为了分享一些信息" class="headerlink" title="为了分享一些信息"></a>为了分享一些信息</h2><blockquote>
+<p>其实在在很多平台都能够发表文章和看法，但有的时候，审核会出问题，导致我想发的东西会被锁定。<br>在这里不会，我可以很<del>随心所欲</del>自由的发一些东西，当然基本上( •̀ ω •́ )y都是积极，健康，正能量的技术或者知识。</p>
+</blockquote>
+<h2 id="为了迎接人工智的浪潮"><a href="#为了迎接人工智的浪潮" class="headerlink" title="为了迎接人工智的浪潮"></a>为了迎接人工智的浪潮</h2><blockquote>
+<p>在当前这个时间节点来说，是一个AI技术大爆发的时代。当前组成AI最重要的三个方面</p>
+<ol>
+<li><strong>数据/语料</strong> 也就是我们说的话，是AI的地基，而我之后写的一些东西会尽量的往问答的形式去靠拢，如果之后真的发展到人手一个AI的话。我也能把这些当作语料去正则他的说话习惯，使他更符合我的说话方式（想的有点远）</li>
+<li><strong>算法</strong> 毕竟是计科生，还是要有梦想的，之后会多多学习。把自己总结的发到这里来，知识重组的过程也是不断学习和精进的过程，同时也许能帮助有需要的人。</li>
+<li><strong>算力</strong> 跟钱有关，这玩意可真的奔着硬件上去了，理论上只要你有钱能买到更多的显卡，你的算力越高就越有可能出现质变。</li>
+</ol>
+</blockquote>
+<h2 id="个人感觉很帅"><a href="#个人感觉很帅" class="headerlink" title="个人感觉很帅"></a>个人感觉很帅</h2><blockquote>
+<p>感觉自己做博客，就像是一个电子漂流瓶，不知道在网络里被谁捡到。就像在海边看到一个漂流瓶里面，也许就是一个奇奇怪怪的故事。这难道不酷吗？（何同学语气.png）</p>
+</blockquote>
+<hr>
+<p> 生命短暂，岁月无常。也许几年或者几个月之后，甚至是几天之后，再回首看之前的文章也许会有新的感悟。</p>
+<div class="timeline blue"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>本站更改</p>
+</div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2023-06-01</p>
+</div></div><div class='timeline-item-content'><p>添加了自动回复和通知邮件。</p>
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2023-05-26</p>
+</div></div><div class='timeline-item-content'><p>添加b站视频适配，<br>友链快速添加按钮。</p>
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2023-05-11</p>
+</div></div><div class='timeline-item-content'><p>增加了手机端的白天黑夜图(失败，版本等级过高了)</p>
+</div></div></div>
+]]></content>
+  </entry>
+  <entry>
     <title></title>
     <url>/css/custom.css</url>
     <content><![CDATA[/* 页脚与头图透明 */
@@ -2561,50 +2605,6 @@ div#archive {
 ]]></content>
   </entry>
   <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>charts</title>
-    <url>/charts/index.html</url>
-    <content><![CDATA[<!-- 文章发布时间统计图 -->
-<div id="posts-chart" data-start="2023-04" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
-<!-- 文章标签统计图 -->
-<div id="tags-chart" data-length="10" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
-<!-- 文章分类统计图 -->
-<div id="categories-chart" data-parent="ture" style="border-radius: 8px; height: 300px; padding: 10px;"></div>]]></content>
-  </entry>
-  <entry>
-    <title>关于</title>
-    <url>/about/index.html</url>
-    <content><![CDATA[<h1 id="为什么要写博客呢？"><a href="#为什么要写博客呢？" class="headerlink" title="为什么要写博客呢？"></a>为什么要写博客呢？</h1><h2 id="为了分享一些信息"><a href="#为了分享一些信息" class="headerlink" title="为了分享一些信息"></a>为了分享一些信息</h2><blockquote>
-<p>其实在在很多平台都能够发表文章和看法，但有的时候，审核会出问题，导致我想发的东西会被锁定。<br>在这里不会，我可以很<del>随心所欲</del>自由的发一些东西，当然基本上( •̀ ω •́ )y都是积极，健康，正能量的技术或者知识。</p>
-</blockquote>
-<h2 id="为了迎接人工智的浪潮"><a href="#为了迎接人工智的浪潮" class="headerlink" title="为了迎接人工智的浪潮"></a>为了迎接人工智的浪潮</h2><blockquote>
-<p>在当前这个时间节点来说，是一个AI技术大爆发的时代。当前组成AI最重要的三个方面</p>
-<ol>
-<li><strong>数据/语料</strong> 也就是我们说的话，是AI的地基，而我之后写的一些东西会尽量的往问答的形式去靠拢，如果之后真的发展到人手一个AI的话。我也能把这些当作语料去正则他的说话习惯，使他更符合我的说话方式（想的有点远）</li>
-<li><strong>算法</strong> 毕竟是计科生，还是要有梦想的，之后会多多学习。把自己总结的发到这里来，知识重组的过程也是不断学习和精进的过程，同时也许能帮助有需要的人。</li>
-<li><strong>算力</strong> 跟钱有关，这玩意可真的奔着硬件上去了，理论上只要你有钱能买到更多的显卡，你的算力越高就越有可能出现质变。</li>
-</ol>
-</blockquote>
-<h2 id="个人感觉很帅"><a href="#个人感觉很帅" class="headerlink" title="个人感觉很帅"></a>个人感觉很帅</h2><blockquote>
-<p>感觉自己做博客，就像是一个电子漂流瓶，不知道在网络里被谁捡到。就像在海边看到一个漂流瓶里面，也许就是一个奇奇怪怪的故事。这难道不酷吗？（何同学语气.png）</p>
-</blockquote>
-<hr>
-<p> 生命短暂，岁月无常。也许几年或者几个月之后，甚至是几天之后，再回首看之前的文章也许会有新的感悟。</p>
-<div class="timeline blue"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>本站更改</p>
-</div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2023-06-01</p>
-</div></div><div class='timeline-item-content'><p>添加了自动回复和通知邮件。</p>
-</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2023-05-26</p>
-</div></div><div class='timeline-item-content'><p>添加b站视频适配，<br>友链快速添加按钮。</p>
-</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2023-05-11</p>
-</div></div><div class='timeline-item-content'><p>增加了手机端的白天黑夜图(失败，版本等级过高了)</p>
-</div></div></div>
-]]></content>
-  </entry>
-  <entry>
     <title></title>
     <url>/css/factor.css</url>
     <content><![CDATA[/* 颜色 */
@@ -2756,26 +2756,6 @@ button {
   </entry>
   <entry>
     <title></title>
-    <url>/css/universe.css</url>
-    <content><![CDATA[/* 背景宇宙星光  */
-#universe{
-    display: block;
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */
-    z-index: -1;
-  }]]></content>
-  </entry>
-  <entry>
-    <title></title>
     <url>/css/progress_bar.css</url>
     <content><![CDATA[.pace {
     -webkit-pointer-events: none;
@@ -2833,6 +2813,26 @@ button {
     top: -8px
 }
 ]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/css/universe.css</url>
+    <content><![CDATA[/* 背景宇宙星光  */
+#universe{
+    display: block;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */
+    z-index: -1;
+  }]]></content>
   </entry>
   <entry>
     <title></title>
@@ -2927,18 +2927,6 @@ function createTime() {
 
 // 每秒更新一次内容
 setInterval(createTime, 1000);
-
-]]></content>
-  </entry>
-  <entry>
-    <title>友链</title>
-    <url>/link/index.html</url>
-    <content><![CDATA[<h2 id="本站友链信息"><a href="#本站友链信息" class="headerlink" title="本站友链信息"></a>本站友链信息</h2><blockquote>
-<p>name：淡云墨雨~blog<br>link: <a href="https://djgeeker.com">https://djgeeker.com</a><br>avatar(头像): <a href="https://im-bed1.pages.dev/xiaotu/touxiang.png">https://im-bed1.pages.dev/xiaotu/touxiang.png</a><br>descr(描述)：想让每个平凡的日子里溢出欢喜<br>siteshot(站点截图): <a href="https://im-bed1.pages.dev/youlian/danyunmoyu.png">https://im-bed1.pages.dev/youlian/danyunmoyu.png</a> </p>
-</blockquote>
-<h2 id="快速申请友链"><a href="#快速申请友链" class="headerlink" title="快速申请友链"></a>快速申请友链</h2><p><div class="addBtn"><button onclick="leonus.linkCom()"><i class="fa-solid fa-circle-plus"></i>快速申请 (默认样式)</button> <button onclick="leonus.linkCom(&quot;bf&quot;)"><i class="fa-solid fa-circle-plus"></i>快速申请 (Butterfly)</button></div></p>
-<p><link rel="stylesheet" href="/css/kslink.css"></p>
-<script src="/js/kslink.js"></script>
 
 ]]></content>
   </entry>
@@ -3184,29 +3172,20 @@ document.addEventListener('pjax:complete', showWelcome);
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>音乐</title>
-    <url>/music/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>AI绘画</title>
-    <url>/painting/index.html</url>
-    <content><![CDATA[<!-- <div align=center class="aspect-ratio">
-    <iframe src="https://player.bilibili.com/player.html?aid=485483981&&page=1&as_wide=1&high_quality=1&danmaku=0" 
-    scrolling="no" 
-    border="0" 
-    frameborder="no" 
-    framespacing="0" 
-    high_quality=1
-    danmaku=1 
-    allowfullscreen="true"> 
-    </iframe>
-</div> -->
+    <title>友链</title>
+    <url>/link/index.html</url>
+    <content><![CDATA[<h2 id="本站友链信息"><a href="#本站友链信息" class="headerlink" title="本站友链信息"></a>本站友链信息</h2><blockquote>
+<p>name：淡云墨雨~blog<br>link: <a href="https://djgeeker.com">https://djgeeker.com</a><br>avatar(头像): <a href="https://im-bed1.pages.dev/xiaotu/touxiang.png">https://im-bed1.pages.dev/xiaotu/touxiang.png</a><br>descr(描述)：想让每个平凡的日子里溢出欢喜<br>siteshot(站点截图): <a href="https://im-bed1.pages.dev/youlian/danyunmoyu.png">https://im-bed1.pages.dev/youlian/danyunmoyu.png</a> </p>
+</blockquote>
+<h2 id="快速申请友链"><a href="#快速申请友链" class="headerlink" title="快速申请友链"></a>快速申请友链</h2><p><div class="addBtn"><button onclick="leonus.linkCom()"><i class="fa-solid fa-circle-plus"></i>快速申请 (默认样式)</button> <button onclick="leonus.linkCom(&quot;bf&quot;)"><i class="fa-solid fa-circle-plus"></i>快速申请 (Butterfly)</button></div></p>
+<p><link rel="stylesheet" href="/css/kslink.css"></p>
+<script src="/js/kslink.js"></script>
+
 ]]></content>
   </entry>
   <entry>
-    <title>标签页</title>
-    <url>/tags/index.html</url>
+    <title>音乐</title>
+    <url>/music/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -3228,5 +3207,26 @@ document.addEventListener('pjax:complete', showWelcome);
   </div>
 </div>
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+  </entry>
+  <entry>
+    <title>AI绘画</title>
+    <url>/painting/index.html</url>
+    <content><![CDATA[<!-- <div align=center class="aspect-ratio">
+    <iframe src="https://player.bilibili.com/player.html?aid=485483981&&page=1&as_wide=1&high_quality=1&danmaku=0" 
+    scrolling="no" 
+    border="0" 
+    frameborder="no" 
+    framespacing="0" 
+    high_quality=1
+    danmaku=1 
+    allowfullscreen="true"> 
+    </iframe>
+</div> -->
+]]></content>
+  </entry>
+  <entry>
+    <title>标签页</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
