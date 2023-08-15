@@ -28,6 +28,18 @@
       </tags>
   </entry>
   <entry>
+    <title>每周计划打卡</title>
+    <url>/posts/de7122d8/</url>
+    <content><![CDATA[<p>准备从下周起，每周更新自己的一周计划。先占个位置<br>好家伙，直接鸽了俩个月，</p>
+]]></content>
+      <categories>
+        <category>打卡</category>
+      </categories>
+      <tags>
+        <tag>计划</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>对想学技能的分析</title>
     <url>/posts/1816276e/</url>
     <content><![CDATA[<p class='p blue'>最近发现了好多技能可以学习，好多有意思的事情。奈何时间不够用，需要分个顺序来</p>
@@ -163,18 +175,6 @@
       </categories>
       <tags>
         <tag>技能</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>每周计划打卡</title>
-    <url>/posts/de7122d8/</url>
-    <content><![CDATA[<p>准备从下周起，每周更新自己的一周计划。先占个位置<br>好家伙，直接鸽了俩个月，</p>
-]]></content>
-      <categories>
-        <category>打卡</category>
-      </categories>
-      <tags>
-        <tag>计划</tag>
       </tags>
   </entry>
   <entry>
@@ -2349,36 +2349,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>charts</title>
-    <url>/charts/index.html</url>
-    <content><![CDATA[<!-- 文章发布时间统计图 -->
-<div id="posts-chart" data-start="2023-04" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
-<!-- 文章标签统计图 -->
-<div id="tags-chart" data-length="10" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
-<!-- 文章分类统计图 -->
-<div id="categories-chart" data-parent="ture" style="border-radius: 8px; height: 300px; padding: 10px;"></div>]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/css/universe.css</url>
-    <content><![CDATA[/* 背景宇宙星光  */
-#universe{
-    display: block;
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */
-    z-index: -1;
-  }]]></content>
-  </entry>
-  <entry>
     <title></title>
     <url>/css/custom.css</url>
     <content><![CDATA[/* 页脚与头图透明 */
@@ -2626,108 +2596,6 @@ div#archive {
   </entry>
   <entry>
     <title></title>
-    <url>/css/kslink.css</url>
-    <content><![CDATA[/* 添加友链按钮 */
-/* 快速填写格式 */
-.addBtn {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.addBtn button {
-    transition: .2s;
-    display: flex;
-    margin: 5px auto;
-    color: var(--global-bg);
-    padding: 15px;
-    border-radius: 40px;
-    background: #0000ff;
-    align-items: center;
-}
-
-button {
-    padding: 0;
-    outline: 0;
-    border: none;
-    background: 0 0;
-    cursor: pointer;
-    touch-action: manipulation;
-}
-.fa-solid, .fas {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-}
-.addBtn i {
-    font-size: 1.3rem;
-    margin-right: 10px;
-}
-.addBtn button:hover {
-    background: var(--theme-color);
-    color: #191970;
-}]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/css/progress_bar.css</url>
-    <content><![CDATA[.pace {
-    -webkit-pointer-events: none;
-    pointer-events: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    z-index: 2000;
-    position: fixed;
-    margin: auto;
-    top: 4px;
-    left: 0;
-    right: 0;
-    height: 8px;
-    border-radius: 8px;
-    width: 7rem;
-    background: #eaecf2;
-    border: 1px #e3e8f7;
-    overflow: hidden
-}
-
-.pace-inactive .pace-progress {
-    opacity: 0;
-    transition: .3s ease-in
-}
-
-.pace .pace-progress {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    max-width: 200px;
-    position: absolute;
-    z-index: 2000;
-    display: block;
-    top: 0;
-    right: 100%;
-    height: 100%;
-    width: 100%;
-    /* linear-gradient(to right, #3494e6, #ec6ead) */
-    background: linear-gradient(to right, #43cea2, #3866ca);
-    animation: gradient 2s ease infinite;
-    background-size: 200%
-}
-
-.pace.pace-inactive {
-    opacity: 0;
-    transition: .3s;
-    top: -8px
-}
-]]></content>
-  </entry>
-  <entry>
-    <title></title>
     <url>/css/factor.css</url>
     <content><![CDATA[/* 颜色 */
 :root {
@@ -2836,9 +2704,183 @@ button {
   </entry>
   <entry>
     <title></title>
+    <url>/css/kslink.css</url>
+    <content><![CDATA[/* 添加友链按钮 */
+/* 快速填写格式 */
+.addBtn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.addBtn button {
+    transition: .2s;
+    display: flex;
+    margin: 5px auto;
+    color: var(--global-bg);
+    padding: 15px;
+    border-radius: 40px;
+    background: #0000ff;
+    align-items: center;
+}
+
+button {
+    padding: 0;
+    outline: 0;
+    border: none;
+    background: 0 0;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+.fa-solid, .fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+.addBtn i {
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+.addBtn button:hover {
+    background: var(--theme-color);
+    color: #191970;
+}]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/css/progress_bar.css</url>
+    <content><![CDATA[.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    z-index: 2000;
+    position: fixed;
+    margin: auto;
+    top: 4px;
+    left: 0;
+    right: 0;
+    height: 8px;
+    border-radius: 8px;
+    width: 7rem;
+    background: #eaecf2;
+    border: 1px #e3e8f7;
+    overflow: hidden
+}
+
+.pace-inactive .pace-progress {
+    opacity: 0;
+    transition: .3s ease-in
+}
+
+.pace .pace-progress {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    max-width: 200px;
+    position: absolute;
+    z-index: 2000;
+    display: block;
+    top: 0;
+    right: 100%;
+    height: 100%;
+    width: 100%;
+    /* linear-gradient(to right, #3494e6, #ec6ead) */
+    background: linear-gradient(to right, #43cea2, #3866ca);
+    animation: gradient 2s ease infinite;
+    background-size: 200%
+}
+
+.pace.pace-inactive {
+    opacity: 0;
+    transition: .3s;
+    top: -8px
+}
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/css/universe.css</url>
+    <content><![CDATA[/* 背景宇宙星光  */
+#universe{
+    display: block;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */
+    z-index: -1;
+  }]]></content>
+  </entry>
+  <entry>
+    <title></title>
     <url>/js/universe.js</url>
     <content><![CDATA[function dark() {window.requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var n,e,i,h,t=.05,s=document.getElementById("universe"),o=!0,a="180,184,240",r="226,225,142",d="226,225,224",c=[];function f(){n=window.innerWidth,e=window.innerHeight,i=.216*n,s.setAttribute("width",n),s.setAttribute("height",e)}function u(){h.clearRect(0,0,n,e);for(var t=c.length,i=0;i<t;i++){var s=c[i];s.move(),s.fadeIn(),s.fadeOut(),s.draw()}}function y(){this.reset=function(){this.giant=m(3),this.comet=!this.giant&&!o&&m(10),this.x=l(0,n-10),this.y=l(0,e),this.r=l(1.1,2.6),this.dx=l(t,6*t)+(this.comet+1-1)*t*l(50,120)+2*t,this.dy=-l(t,6*t)-(this.comet+1-1)*t*l(50,120),this.fadingOut=null,this.fadingIn=!0,this.opacity=0,this.opacityTresh=l(.2,1-.4*(this.comet+1-1)),this.do=l(5e-4,.002)+.001*(this.comet+1-1)},this.fadeIn=function(){this.fadingIn&&(this.fadingIn=!(this.opacity>this.opacityTresh),this.opacity+=this.do)},this.fadeOut=function(){this.fadingOut&&(this.fadingOut=!(this.opacity<0),this.opacity-=this.do/2,(this.x>n||this.y<0)&&(this.fadingOut=!1,this.reset()))},this.draw=function(){if(h.beginPath(),this.giant)h.fillStyle="rgba("+a+","+this.opacity+")",h.arc(this.x,this.y,2,0,2*Math.PI,!1);else if(this.comet){h.fillStyle="rgba("+d+","+this.opacity+")",h.arc(this.x,this.y,1.5,0,2*Math.PI,!1);for(var t=0;t<30;t++)h.fillStyle="rgba("+d+","+(this.opacity-this.opacity/20*t)+")",h.rect(this.x-this.dx/4*t,this.y-this.dy/4*t-2,2,2),h.fill()}else h.fillStyle="rgba("+r+","+this.opacity+")",h.rect(this.x,this.y,this.r,this.r);h.closePath(),h.fill()},this.move=function(){this.x+=this.dx,this.y+=this.dy,!1===this.fadingOut&&this.reset(),(this.x>n-n/4||this.y<0)&&(this.fadingOut=!0)},setTimeout(function(){o=!1},50)}function m(t){return Math.floor(1e3*Math.random())+1<10*t}function l(t,i){return Math.random()*(i-t)+t}f(),window.addEventListener("resize",f,!1),function(){h=s.getContext("2d");for(var t=0;t<i;t++)c[t]=new y,c[t].reset();u()}(),function t(){document.getElementsByTagName('html')[0].getAttribute('data-theme')=='dark'&&u(),window.requestAnimationFrame(t)}()};
 dark()]]></content>
+  </entry>
+  <entry>
+    <title>charts</title>
+    <url>/charts/index.html</url>
+    <content><![CDATA[<!-- 文章发布时间统计图 -->
+<div id="posts-chart" data-start="2023-04" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
+<!-- 文章标签统计图 -->
+<div id="tags-chart" data-length="10" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
+<!-- 文章分类统计图 -->
+<div id="categories-chart" data-parent="ture" style="border-radius: 8px; height: 300px; padding: 10px;"></div>]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/js/kslink.js</url>
+    <content><![CDATA[var leonus = {
+    linkCom: e => {
+        var t = document.querySelector(".el-textarea__inner");
+        "bf" == e ? (t.value = "```yml\n", t.value += "- name: \n  link: \n  avatar: \n  descr: \n  siteshot: ", t.value += "\n```", t.setSelectionRange(15, 15)) : (t.value = "站点名称：\n站点地址：\n头像链接：\n站点描述：\n站点截图：", t.setSelectionRange(5, 5)), t.focus()
+    },
+    owoBig: () => {
+        if (!document.getElementById("post-comment") || document.body.clientWidth < 768) return;
+        let e = 1,
+            t = "",
+            o = document.createElement("div"),
+            n = document.querySelector("body");
+        o.id = "owo-big", n.appendChild(o), new MutationObserver((l => {
+            for (let a = 0; a < l.length; a++) {
+                let i = l[a].addedNodes,
+                    s = "";
+                if (2 == i.length && "OwO-body" == i[1].className) s = i[1];
+                else {
+                    if (1 != i.length || "tk-comment" != i[0].className) continue;
+                    s = i[0]
+                }
+                s.onmouseover = l => {
+                    e && ("OwO-body" == s.className && "IMG" == l.target.tagName || "tk-owo-emotion" == l.target.className) && (e = 0, t = setTimeout((() => {
+                        let e = 3 * l.path[0].clientHeight,
+                            t = 3 * l.path[0].clientWidth,
+                            a = l.x - l.offsetX - (t - l.path[0].clientWidth) / 2,
+                            i = l.y - l.offsetY;
+                        a + t > n.clientWidth && (a -= a + t - n.clientWidth + 10), a < 0 && (a = 10), o.style.cssText = `display:flex; height:${e}px; width:${t}px; left:${a}px; top:${i}px;`, o.innerHTML = `<img src="${l.target.src}">`
+                    }), 300))
+                }, s.onmouseout = () => {
+                    o.style.display = "none", e = 1, clearTimeout(t)
+                }
+            }
+        })).observe(document.getElementById("post-comment"), {
+            subtree: !0,
+            childList: !0
+        })
+    },
+};]]></content>
   </entry>
   <entry>
     <title></title>
@@ -3071,46 +3113,16 @@ document.addEventListener('pjax:complete', showWelcome);
 ]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/js/kslink.js</url>
-    <content><![CDATA[var leonus = {
-    linkCom: e => {
-        var t = document.querySelector(".el-textarea__inner");
-        "bf" == e ? (t.value = "```yml\n", t.value += "- name: \n  link: \n  avatar: \n  descr: \n  siteshot: ", t.value += "\n```", t.setSelectionRange(15, 15)) : (t.value = "站点名称：\n站点地址：\n头像链接：\n站点描述：\n站点截图：", t.setSelectionRange(5, 5)), t.focus()
-    },
-    owoBig: () => {
-        if (!document.getElementById("post-comment") || document.body.clientWidth < 768) return;
-        let e = 1,
-            t = "",
-            o = document.createElement("div"),
-            n = document.querySelector("body");
-        o.id = "owo-big", n.appendChild(o), new MutationObserver((l => {
-            for (let a = 0; a < l.length; a++) {
-                let i = l[a].addedNodes,
-                    s = "";
-                if (2 == i.length && "OwO-body" == i[1].className) s = i[1];
-                else {
-                    if (1 != i.length || "tk-comment" != i[0].className) continue;
-                    s = i[0]
-                }
-                s.onmouseover = l => {
-                    e && ("OwO-body" == s.className && "IMG" == l.target.tagName || "tk-owo-emotion" == l.target.className) && (e = 0, t = setTimeout((() => {
-                        let e = 3 * l.path[0].clientHeight,
-                            t = 3 * l.path[0].clientWidth,
-                            a = l.x - l.offsetX - (t - l.path[0].clientWidth) / 2,
-                            i = l.y - l.offsetY;
-                        a + t > n.clientWidth && (a -= a + t - n.clientWidth + 10), a < 0 && (a = 10), o.style.cssText = `display:flex; height:${e}px; width:${t}px; left:${a}px; top:${i}px;`, o.innerHTML = `<img src="${l.target.src}">`
-                    }), 300))
-                }, s.onmouseout = () => {
-                    o.style.display = "none", e = 1, clearTimeout(t)
-                }
-            }
-        })).observe(document.getElementById("post-comment"), {
-            subtree: !0,
-            childList: !0
-        })
-    },
-};]]></content>
+    <title>友链</title>
+    <url>/link/index.html</url>
+    <content><![CDATA[<h2 id="本站友链信息"><a href="#本站友链信息" class="headerlink" title="本站友链信息"></a>本站友链信息</h2><blockquote>
+<p>name：淡云墨雨~blog<br>link: <a href="https://djgeeker.com">https://djgeeker.com</a><br>avatar(头像): <a href="https://im-bed1.pages.dev/xiaotu/touxiang.png">https://im-bed1.pages.dev/xiaotu/touxiang.png</a><br>descr(描述)：想让每个平凡的日子里溢出欢喜<br>siteshot(站点截图): <a href="https://im-bed1.pages.dev/youlian/danyunmoyu.png">https://im-bed1.pages.dev/youlian/danyunmoyu.png</a> </p>
+</blockquote>
+<h2 id="快速申请友链"><a href="#快速申请友链" class="headerlink" title="快速申请友链"></a>快速申请友链</h2><p><div class="addBtn"><button onclick="leonus.linkCom()"><i class="fa-solid fa-circle-plus"></i>快速申请 (默认样式)</button> <button onclick="leonus.linkCom(&quot;bf&quot;)"><i class="fa-solid fa-circle-plus"></i>快速申请 (Butterfly)</button></div></p>
+<p><link rel="stylesheet" href="/css/kslink.css"></p>
+<script src="/js/kslink.js"></script>
+
+]]></content>
   </entry>
   <entry>
     <title></title>
@@ -3172,16 +3184,6 @@ setInterval(createTime, 1000);
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>标签页</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>电影</title>
-    <url>/movies/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>AI绘画</title>
     <url>/painting/index.html</url>
     <content><![CDATA[<!-- <div align=center class="aspect-ratio">
@@ -3218,15 +3220,13 @@ setInterval(createTime, 1000);
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
   </entry>
   <entry>
-    <title>友链</title>
-    <url>/link/index.html</url>
-    <content><![CDATA[<h2 id="本站友链信息"><a href="#本站友链信息" class="headerlink" title="本站友链信息"></a>本站友链信息</h2><blockquote>
-<p>name：淡云墨雨~blog<br>link: <a href="https://djgeeker.com">https://djgeeker.com</a><br>avatar(头像): <a href="https://im-bed1.pages.dev/xiaotu/touxiang.png">https://im-bed1.pages.dev/xiaotu/touxiang.png</a><br>descr(描述)：想让每个平凡的日子里溢出欢喜<br>siteshot(站点截图): <a href="https://im-bed1.pages.dev/youlian/danyunmoyu.png">https://im-bed1.pages.dev/youlian/danyunmoyu.png</a> </p>
-</blockquote>
-<h2 id="快速申请友链"><a href="#快速申请友链" class="headerlink" title="快速申请友链"></a>快速申请友链</h2><p><div class="addBtn"><button onclick="leonus.linkCom()"><i class="fa-solid fa-circle-plus"></i>快速申请 (默认样式)</button> <button onclick="leonus.linkCom(&quot;bf&quot;)"><i class="fa-solid fa-circle-plus"></i>快速申请 (Butterfly)</button></div></p>
-<p><link rel="stylesheet" href="/css/kslink.css"></p>
-<script src="/js/kslink.js"></script>
-
-]]></content>
+    <title>标签页</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>电影</title>
+    <url>/movies/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
